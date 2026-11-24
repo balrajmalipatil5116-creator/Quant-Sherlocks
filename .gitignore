@@ -221,3 +221,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+.env
+astb.db
+astb.db-wal
+astb.db-shm
+signals_log.jsonl
+.vscode/
