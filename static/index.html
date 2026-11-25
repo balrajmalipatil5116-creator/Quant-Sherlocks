@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASTB | AI trading terminal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Pinned to v4: the unpinned URL now serves v5, which removed addCandlestickSeries and broke the chart -->
+  <script src="https://unpkg.com/lightweight-charts@4.2.0/dist/lightweight-charts.standalone.production.js"></script>
+  <link rel="stylesheet" href="terminal.css">
+  <link rel="stylesheet" href="chatbot.css">
+  <link rel="stylesheet" href="fx.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script src="auth.js"></script>
+  <script src="drawing.js"></script>
+  <script src="dashboard.js"></script>
+  <script src="autotrade.js"></script>
+  <script src="chatbot.js"></script>
+  <script src="modelpanel.js"></script>
+  <script src="worldmap.js"></script>
+  <script src="fx.js"></script>
+  <script src="extras.js"></script>
+  <script>
+    // Header gains a frosted background once the page scrolls.
+    (function () {
+      const on = () => document.body.classList.toggle('scrolled', window.scrollY > 8);
+      window.addEventListener('scroll', on, { passive: true }); on();
+    })();
+  </script>
+</body>
+</html>
